@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NovaCare — GitHub Test Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- ================= HERO ================= -->
+  <header class="hero" id="top">
+    <nav class="nav">
+      <div class="nav__brand">
+        <span class="nav__dot"></span> NovaCare
+      </div>
+      <ul class="nav__links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#stats">Impact</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="btn btn--ghost" id="themeToggle">🌙 Dark</button>
+    </nav>
+
+    <div class="hero__inner">
+      <div class="hero__badge">Loaded from GitHub via jsDelivr ✅</div>
+      <h1 class="hero__title">
+        Smarter senior care,<br />
+        <span class="hero__gradient">powered by data.</span>
+      </h1>
+      <p class="hero__subtitle">
+        This whole page — HTML, CSS and JavaScript — lives in a GitHub repo
+        and is loaded into Webflow. If you can see styles and click things, it works.
+      </p>
+      <div class="hero__cta">
+        <button class="btn btn--primary" id="ctaBtn">Get started</button>
+        <button class="btn btn--ghost" id="pingBtn">Run a test →</button>
+      </div>
+      <p class="hero__status" id="statusLine">Status: waiting for interaction…</p>
+    </div>
+
+    <div class="hero__glow"></div>
+  </header>
+
+  <!-- ================= FEATURES ================= -->
+  <section class="section" id="features">
+    <h2 class="section__title">What it does</h2>
+    <p class="section__lead">Three quick cards, rendered and animated in pure JS/CSS.</p>
+    <div class="cards" id="cardGrid"><!-- cards injected by script.js --></div>
+  </section>
+
+  <!-- ================= STATS ================= -->
+  <section class="section section--alt" id="stats">
+    <h2 class="section__title">Live counters</h2>
+    <p class="section__lead">These count up when they scroll into view (JS test).</p>
+    <div class="stats" id="statGrid">
+      <div class="stat"><span class="stat__num" data-target="1284">0</span><span class="stat__label">Residents monitored</span></div>
+      <div class="stat"><span class="stat__num" data-target="97">0</span><span class="stat__label">% fall detection</span></div>
+      <div class="stat"><span class="stat__num" data-target="42">0</span><span class="stat__label">Partner facilities</span></div>
+      <div class="stat"><span class="stat__num" data-target="6">0</span><span class="stat__label">Avg. response (min)</span></div>
+    </div>
+  </section>
+
+  <!-- ================= PRICING ================= -->
+  <section class="section" id="pricing">
+    <h2 class="section__title">Pick a plan</h2>
+    <p class="section__lead">Toggle billing to see the JS recalculate prices.</p>
+    <div class="billing-toggle">
+      <span id="monthlyLabel" class="active">Monthly</span>
+      <label class="switch">
+        <input type="checkbox" id="billingSwitch" />
+        <span class="slider"></span>
+      </label>
+      <span id="yearlyLabel">Yearly <em>(-20%)</em></span>
+    </div>
+    <div class="pricing" id="pricingGrid"><!-- plans injected by script.js --></div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section class="section section--alt" id="contact">
+    <h2 class="section__title">Try the form</h2>
+    <p class="section__lead">Client-side validation only — no backend needed for this test.</p>
+    <form class="form" id="demoForm" novalidate>
+      <div class="form__row">
+        <input type="text" id="name" placeholder="Your name" />
+        <input type="email" id="email" placeholder="you@example.com" />
+      </div>
+      <textarea id="message" rows="3" placeholder="Say hello…"></textarea>
+      <button type="submit" class="btn btn--primary">Send message</button>
+      <p class="form__feedback" id="formFeedback"></p>
+    </form>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <p>© <span id="year"></span> NovaCare — GitHub → Webflow test page.</p>
+    <a href="#top" class="footer__top">Back to top ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
